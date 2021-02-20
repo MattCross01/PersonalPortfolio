@@ -9,6 +9,8 @@
     flex-direction: column;
     min-height: 100vh;
     justify-content: flex-start;
+    background-image: url("https://th.bing.com/th/id/Rd9391f8cb4fd49ffec33fe4dbb434ef5?rik=wQQ%2fYt79tf%2f4rg&riu=http%3a%2f%2fwww.dailyfreepsd.com%2fwp-content%2fuploads%2f2013%2f09%2fhighway-blurred-background.jpg&ehk=%2bsVojYI1iwFgDERJy%2b2vmB9ULtq%2b4nH8SrdmchvpG%2fc%3d&risl=&pid=ImgRaw");
+    background-size: 3000px 3500px;
   }
   
   header {
@@ -40,6 +42,137 @@
   text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px blue;
   }
 
+
+  .h1 {
+    color: cyan;
+   text-align: center;
+  }
+  div.gallery {
+    border: 5px solid rgb(0, 0, 0);
+    background-color:purple;
+    float: right;
+    margin-left: 1000px;
+    margin-right: -500px;
+    box-shadow: 10px 10px 5px #000000;;
+    
+  }
+  
+  div.gallery:hover {
+    border: 5px solid rgb(0, 0, 0);
+    background-color: black;
+    float: center;
+  }
+  
+  div.gallery img {
+    width: 100%;
+    height: 100%;
+    margin-right: 500px;
+    margin-left: 0px;
+  }
+  
+  div.desc {
+    padding: 15px;
+    margin: 0px -50px;
+    text-align: center;
+    color:rgb(255, 255, 255);
+    font-size: 25px;
+    text-shadow: 1px 1px 2px rgb(89, 0, 255), 0 0 25px rgb(89, 0, 255), 0 0 5px rgb(0, 0, 0);
+  }
+  
+  * {
+    box-sizing: border-box;
+  }
+  
+  .responsive {
+    padding: 0 6px;
+    float: center;
+    width: 24.99999%;
+    margin: 0px -50px;
+  }
+  .responsive2 {
+    padding: 0 6px;
+    float: center;
+    width: 24.99999%;
+    margin: -900px 900px;
+  }
+ 
+  /*Right side gallery */
+
+  div.gallery2 {
+    border: 5px solid rgb(204, 204, 204);
+    background-color: rgb(255, 255, 255);
+    float: right;
+    margin-left: 1000px;
+    margin-right: -500px
+    
+  }
+  
+  div.gallery2:hover {
+    border: 5px solid rgb(0, 0, 0);
+    background-color: black;
+    float: center;
+  }
+  
+  div.gallery2 img {
+    width: 100%;
+    height: 100%;
+    margin-right: 500px;
+    margin-left: 0px;
+  }
+  
+  div.desc2 {
+    padding: 15px;
+    margin: 0px -50px;
+    text-align: center;
+    color:rgb(0, 102, 255);
+    font-size: 25px;
+    text-shadow: 1px 1px 2px rgb(89, 0, 255), 0 0 25px rgb(89, 0, 255), 0 0 5px rgb(0, 0, 0);
+  }
+  
+  * {
+    box-sizing: border-box;
+  }
+  
+  .responsive {
+    padding: 0 6px;
+    float: center;
+    width: 24.99999%;
+    margin: 0px -50px;
+  }
+  .responsive {
+    padding: 0 6px;
+    float: center;
+    width: 24.99999%;
+    margin: 0px -50px;
+  }
+  
+  @media only screen and (max-width: 375px) {
+    .responsive {
+      width: 49.99999%;
+      margin: 6px 0;
+      justify-content: center;
+    }
+  }
+  
+  @media only screen and (max-width: 812px) {
+    .responsive {
+      width: 100%;
+    }
+  }
+  
+  .clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+ 
+  @media screen and (max-width: 375px 812px) {
+    main,
+    nav {
+      flex-direction: column;
+    }  
+  }
+  
   footer {
     width: 100%;
     bottom: 0;
@@ -51,17 +184,3 @@
     margin: 0px 1050px 0px 0px;
     opacity: 70%;
   }
-
-
-  .h1 {
-    color: cyan;
-   text-align: center;
-  }
-  
-  @media screen and (max-width: 768px) {
-    main,
-    nav {
-      flex-direction: column;
-    }  
-  }
-  
