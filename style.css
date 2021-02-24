@@ -9,37 +9,40 @@
     flex-direction: column;
     min-height: 100vh;
     justify-content: flex-start;
-    background-image: url("https://th.bing.com/th/id/Rd9391f8cb4fd49ffec33fe4dbb434ef5?rik=wQQ%2fYt79tf%2f4rg&riu=http%3a%2f%2fwww.dailyfreepsd.com%2fwp-content%2fuploads%2f2013%2f09%2fhighway-blurred-background.jpg&ehk=%2bsVojYI1iwFgDERJy%2b2vmB9ULtq%2b4nH8SrdmchvpG%2fc%3d&risl=&pid=ImgRaw");
+    background-image: url("https://th.bing.com/th/id/R9b7f98efb6d4919a8b670f31fefb9037?rik=k3jnExfAhbAX7g&riu=http%3a%2f%2f4.bp.blogspot.com%2f-gkcp_3X5_qI%2fUh9VZ9On2-I%2fAAAAAAAAEKI%2fDMZMJh-CFPY%2fs1600%2fBackground-Graphics-For-Websites1.jpg&ehk=azZUkoXvhBBLAGhkFudffPJTfn6%2fpSIRlRu4qvyNTM0%3d&risl=&pid=ImgRaw");
     background-size: 3000px 3500px;
   }
   
   header {
-    padding: 60px;
+    padding: 20px;
     text-align: center;
-    background: hsla(0, 0%, 15%, 0);
+    background: rgb(0, 0, 0);
     color: #fff;
+    
   }
   
   nav {
     display: flex;
-    background-color: #000000a2;
+    background-color: #000000d3;
     word-spacing: 500px;
     justify-content: center;
+    margin-right: -0px;
+    margin-top: 
     
   }
   
-
-
   nav a {
     color: #ffffff;
-    padding: 14px 20px;
+    padding: 2px 20px;
     text-decoration: none;
-    text-align: center;
-    word-spacing: 500px;
-    text-decoration: underline;
-    font-size: 32px;
+    text-align: right;
+    text-decoration: none;
+    font-size: 20px;
     color: white;
-  text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px blue;
+    margin-right: -5px;
+    margin-left: 60px;
+    margin-top: -25px;
+    justify-content: right;
   }
 
 
@@ -47,6 +50,7 @@
     color: cyan;
    text-align: center;
   }
+  
   div.gallery {
     border: 5px solid rgb(0, 0, 0);
     background-color:purple;
@@ -146,14 +150,6 @@
     margin: 0px -50px;
   }
   
-  @media only screen and (max-width: 375px) {
-    .responsive {
-      width: 49.99999%;
-      margin: 6px 0;
-      justify-content: center;
-    }
-  }
-  
   .clearfix:after {
     content: "";
     display: table;
@@ -171,3 +167,18 @@
     margin: 0px 150px 0px 0px;
     opacity: 70%;
   }
+
+  /* Responsive layout - when the screen is less than 700px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 700px) {
+  .row {   
+    flex-direction: column;
+  }
+}
+
+/* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
+@media screen and (max-width: 400px) {
+  .navbar a {
+    float: none;
+    width: 100%;
+  }
+}
